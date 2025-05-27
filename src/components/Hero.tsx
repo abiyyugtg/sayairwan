@@ -1,6 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { useInView } from "../hooks/useInView";
 import { ArrowDownCircle } from "lucide-react";
+import irwinImage from "../assets/irwin.jpg"; // Pastikan path sesuai struktur folder
 
 const Hero: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -30,8 +31,10 @@ const Hero: React.FC = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
             <a
-              href="/src/cv.pdf" // Ganti dengan path ke file PDF Anda
-              download // Menambahkan atribut download
+              href={"/assets/CV_Irwan_Abiyyu.pdf"}
+              download="CV_Irwan_Abiyyu.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 text-white hover:from-purple-600 hover:to-purple-800 transition-all duration-300 shadow-lg hover:shadow-purple-500/30"
             >
               Download CV
@@ -53,7 +56,7 @@ const Hero: React.FC = () => {
             {/* Image container */}
             <div className="absolute inset-2 rounded-full overflow-hidden bg-purple-100 dark:bg-gray-800 border-4 border-white dark:border-gray-700">
               <img
-                src="/src/irwin.jpg"
+                src={irwinImage} // Ganti dengan path ke gambar Anda
                 alt="Irwan Abiyyu Saputra"
                 style={{
                   width: "170%", // Memperbesar lebar gambar

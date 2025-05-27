@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import { useInView } from "../hooks/useInView";
-import { ExternalLink, Github, ChevronLeft, ChevronRight } from "lucide-react";
+import { ExternalLink, ChevronLeft, ChevronRight } from "lucide-react";
+import inventarisImage from "../assets/inventaris.png";
+import ngestiImage from "../assets/ngesti.png";
 
 const Projects: React.FC = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -13,7 +15,7 @@ const Projects: React.FC = () => {
       description:
         "A website used for borrowing workshop tools and managing workshop equipment.",
       tags: ["Laravel 12", "Vue", "Tailwind CSS"],
-      image: "/src/inventaris.png",
+      image: inventarisImage,
       // githubLink: "#",
       // demoLink: "#",
     },
@@ -21,7 +23,7 @@ const Projects: React.FC = () => {
       title: "Project Belajar",
       description: "Learn WordPress by creating a website for an organization.",
       tags: ["Wordpress"],
-      image: "/src/ngesti.png",
+      image: ngestiImage,
       // githubLink: "#",
       demoLink: "http://prmngestiharjotengah.wuaze.com/",
     },
