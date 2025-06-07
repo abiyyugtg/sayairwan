@@ -71,7 +71,7 @@ const Skills: React.FC = () => {
     {
       name: "XAMPP",
       category: "tools",
-      icon: "https://pnghq.com/wp-content/uploads/xampp-logo-png-transparent-57294-300x300.png",
+      icon: "https://icons.veryicon.com/png/o/application/skills-section/xampp-1.png",
       color: "bg-orange-500",
     },
     {
